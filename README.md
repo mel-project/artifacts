@@ -19,6 +19,9 @@ Then:
 $ git clone https://github.com/gakonst/foundry
 $ cd foundry
 $ cross build --release --locked --target x86_64-unknown-linux-musl
+$ tar -czvf forge.tar.gz -C target/x86_64-unknown-linux-musl/release forge
+$ tar -czvf cast.tar.gz -C target/x86_64-unknown-linux-musl/release cast
+$ tar -czvf anvil.tar.gz -C target/x86_64-unknown-linux-musl/release anvil
 ```
 
 The resultant binaries will be in `target/x86_64-unknown-linux-musl/release`.
